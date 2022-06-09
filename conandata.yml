@@ -1,0 +1,67 @@
+binaries:
+  "8.0.282":
+    "Windows_x86":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.52.0.23-ca-jdk8.0.282-win_i686.zip"
+      sha256: "989ce40a44c32b75826668d28b96ad75bb037b8d83e8cccdd222cecff50ab7e6"
+    "Windows_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.52.0.23-ca-jdk8.0.282-win_x64.zip"
+      sha256: "af76e1a483ec7a119716e4b9c2f4c050ce413b5b15afe66563f25048a1b00220"
+    "Macos_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.52.0.23-ca-jdk8.0.282-macosx_x64.tar.gz"
+      sha256: "3c8ba3629d9f896a4f5edd2021ee1e7b5b9fb9c4a6866c96dbae1adb9424df9e"
+    "Macos_armv8":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.52.0.23-ca-jdk8.0.282-macosx_aarch64.tar.gz"
+      sha256: "011845318d37567ff2cb63d0f9115dd251504dc0d9156c9b7d9c4213a032c3be"
+    "Linux_x86":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.52.0.23-ca-jdk8.0.282-linux_i686.tar.gz"
+      sha256: "d68bd05d36a4da4774a5211eaca2870eda632410df19fe1dabb5adf9906c54c3"
+    "Linux_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.52.0.23-ca-jdk8.0.282-linux_x64.tar.gz"
+      sha256: "36c39878724f509d765a8f3804f6cef87c2eff39ac85447a0dc870231c1d3bca"
+    "Linux_armv8":
+      url: "https://cdn.azul.com/zulu-embedded/bin/zulu8.52.0.23-ca-jdk8.0.282-linux_aarch64.tar.gz"
+      sha256: "ae0ad6046f6e7e751b43c615e3d37afc8b6b1c19b88dffd5f22c225aae9d26a7"
+  "8.0.292":
+    "Windows_x86":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-win_i686.zip"
+      sha256: "183b7322bb42dee32b77a72d126d6354551f1361a702fa4adccca8020bbaa94c"
+    "Windows_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-win_x64.zip"
+      sha256: "84efdbd536497f5f21ef4412e2045b637255d135be873ea05184f1f7924c3828"
+    "Macos_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-macosx_x64.tar.gz"
+      sha256: "e671f8990229b1ca2a76faabb21ba2f1a9e1f7211392e0f657225559be9b05c8"
+    "Macos_armv8":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-macosx_aarch64.tar.gz"
+      sha256: "8e901075cde2c31f531a34e8321ea4201970936abf54240a232e9389952afe84"
+    "Linux_x86":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-linux_i686.tar.gz"
+      sha256: "eb181e71db09192d9dee941d3a946f1a0ee2550f8a05641845e6a7ac628106d9"
+    "Linux_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-fx-jdk8.0.292-linux_x64.tar.gz"
+      sha256: "19985150dcea937d3899881bdd1d92ff384b3c018106868350677f37c245996e"
+    "Linux_armv8":
+      url: "https://cdn.azul.com/zulu-embedded/bin/zulu8.54.0.21-ca-jdk8.0.292-linux_aarch64.tar.gz"
+      sha256: "5eb9a61c60e89d262167bf99855b79115ca8e16b1b8bdc1cd3ad1ed4f0d163ac"
+  "8.0.332":
+    "Windows_x86":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.62.0.19-ca-jdk8.0.332-win_i686.zip"
+      sha256: "8f4b7dd1fab73fb853681bfecf5cbeeb92587257200c245c449a9d924f6d92de"
+    "Windows_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.62.0.19-ca-jdk8.0.332-win_x64.zip"
+      sha256: "6b24680b7c241a239ab070e4f5aea0fc94b3c6e17303c0fc40dcd8524815bfc2"
+    "Macos_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.62.0.19-ca-jdk8.0.332-macosx_x64.tar.gz"
+      sha256: "9b2a14112de141bdcef0ee34a57072b3310568b365ca5ecf54724a8100039339"
+    "Macos_armv8":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.62.0.19-ca-jdk8.0.332-macosx_aarch64.tar.gz"
+      sha256: "e5c84a46bbd985c3a53358db9c97a6fd4930f92b833c3163a0d1e47dab59768c"
+    "Linux_x86":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.62.0.19-ca-jdk8.0.332-linux_i686.tar.gz"
+      sha256: "9a755765d58e4d8ab14cf080a206815c7070cc719086f1fe41a22cdbf1374b05"
+    "Linux_x86_64":
+      url: "https://cdn.azul.com/zulu/bin/zulu8.62.0.19-ca-jdk8.0.332-linux_x64.tar.gz"
+      sha256: "bfe6fa049797ea996e5a7252279f4bb99d5e8f2227be6c3b98e9c78e3d916fc9"
+    "Linux_armv8":
+      url: "https://cdn.azul.com/zulu-embedded/bin/zulu8.62.0.19-ca-jdk8.0.332-linux_aarch64.tar.gz"
+      sha256: "c4519172d6f5323192561108ee25c2cdef2b7ab0d7f9c807d95a7cf5d4209e84"
