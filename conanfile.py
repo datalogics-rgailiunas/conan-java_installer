@@ -3,7 +3,7 @@
 import os
 import platform
 
-from conans import ConanFile, tools
+from conan import ConanFile, tools
 from conans.errors import ConanInvalidConfiguration
 
 
