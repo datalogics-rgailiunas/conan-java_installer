@@ -5,17 +5,9 @@ import platform
 
 from conan import ConanFile
 from conan.tools.files import get
-
-from conan.tools.files import save, load
-
-from conan.tools.layout import basic_layout
 from conan.tools.files import copy
-
-from conan.tools.gnu import AutotoolsToolchain, AutotoolsDeps
-from conan.tools.microsoft import unix_path, VCVars, is_msvc
-
 from conan.errors import ConanInvalidConfiguration
-from conan.errors import ConanException
+
 
 
 
@@ -41,11 +33,11 @@ class ZuluOpenJDKConan(ConanFile):
         return '{0}_{1}'.format(self.settings.os, self.settings.arch)
 
     @property
-    def layout(self):
-       basic_layout(self, src_folder="source")
+    def _source_subfolder(self):
+        return "source_subfolder"
 
-    def source(self):
-        data = get(self, **self.conan_data["binaries"][self.version].get(self._binary_key, None), strip_root=True)
+    def config_options(self):
+        data = self.conan_data["binaries"][self.version].get(self._binary_key, None)
         if data is None:
             raise ConanInvalidConfiguration("Unsupported Architecture.  No data was found in {0} for OS "
                                             "{1} with arch {2}".format(self.version, self.settings.os,
@@ -58,14 +50,13 @@ class ZuluOpenJDKConan(ConanFile):
         self.output.info('Downloading {0}'.format(
             self.conan_data["binaries"][self.version][self._binary_key].get('url')))
         tools.get(**self.conan_data["binaries"][self.version][self._binary_key],
-                  destination=self.layout, strip_root=True)
+                  destination=self._source_subfolder, strip_root=True)
 
     def package(self):
-        self.copy(pattern='*', dst='.', src=self.layout)
-        copy(self, "*", self.source_folder, self.package_folder, keep_path=False)
+        self.copy(pattern='*', dst='.', src=self._source_subfolder)
 
     def package_id(self):
-        del self.info.settings.os.subsystem
+        del self.info.settings.os.version
 
     def package_info(self):
         self.cpp_info.includedirs.append(self._jni_folder)
