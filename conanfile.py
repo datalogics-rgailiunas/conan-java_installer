@@ -49,7 +49,7 @@ class ZuluOpenJDKConan(ConanFile):
     def build(self):
         self.output.info('Downloading {0}'.format(
             self.conan_data["binaries"][self.version][self._binary_key].get('url')))
-        tools.get(**self.conan_data["binaries"][self.version][self._binary_key],
+        get(self, **self.conan_data["binaries"][self.version][self._binary_key],
                   destination=self._source_subfolder, strip_root=True)
 
     def package(self):
